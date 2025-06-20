@@ -1,0 +1,25 @@
+# Introduction to Genomic Data Analysis - Requirements
+# Stanford Data Ocean Precision Medicine Project
+
+# Core data science libraries
+pandas>=1.5.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# AWS and cloud connectivity
+pyathena>=2.5.0
+boto3>=1.24.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipywidgets>=7.7.0
+
+# Statistical analysis
+scipy>=1.9.0
+
+# Type hints support
+typing-extensions>=4.3.0
+
+# Development and testing
+pytest>=7.1.0 

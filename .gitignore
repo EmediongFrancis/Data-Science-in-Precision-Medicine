@@ -1,0 +1,121 @@
+# Data Science in Precision Medicine - .gitignore
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Data files (protect sensitive genomic data)
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Genomics files
+*.vcf
+*.vcf.gz
+*.bam
+*.sam
+*.fastq
+*.fq
+*.fa
+*.fasta
+
+# Medical imaging files
+*.dcm
+*.dicom
+*.nii
+*.nii.gz
+
+# Large model files
+*.joblib
+*.model
+
+# AWS credentials and config
+.aws/
+config.ini
+secrets.json
+credentials.json
+.env
+.env.local
+.env.production
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# R files
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Output files and results
+results/
+output/
+plots/
+figures/
+images/*.png
+images/*.jpg
+images/*.pdf
+
+# Cache directories
+.cache/
+cache/
+
+# Backup files
+*.bak
+*.backup
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Documentation build
+docs/_build/
+
+# Large datasets (use Git LFS if needed)
+data/large_dataset*
+data/raw_data*
+datasets/*/large_*
+
+# Notebook outputs (optional - uncomment if you want to ignore all outputs)
+# *.ipynb
+
+# Specific to this project
+01-introduction-to-genomics/data/*.csv
+01-introduction-to-genomics/results/*
+01-introduction-to-genomics/images/* 
