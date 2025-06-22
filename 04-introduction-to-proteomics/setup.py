@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="introduction-to-transcriptomics",
+    name="introduction-to-proteomics",
     version="1.0.0",
-    description="Introduction to Transcriptomics - Stanford Data Ocean Module",
+    description="Introduction to Proteomics - Stanford Data Ocean Module",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Stanford Data Ocean",
@@ -22,6 +22,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Topic :: Scientific/Engineering :: Bio-Informatics",
+        "Topic :: Scientific/Engineering :: Chemistry",
         "Topic :: Education",
     ],
     python_requires=">=3.7",
@@ -38,32 +39,36 @@ setup(
         "ipywidgets>=7.6.0",
     ],
     extras_require={
-        "bioinformatics": [
-            "scanpy>=1.8.0",
-            "anndata>=0.8.0",
-            "gseapy>=0.10.0",
-            "bioservices>=1.8.0",
+        "proteomics": [
+            "pyteomics>=4.5.0",
+            "pymzml>=2.4.0",
+            "spectrum_utils>=0.3.0",
         ],
-        "advanced": [
-            "umap-learn>=0.5.0",
-            "leidenalg>=0.8.0",
-            "python-igraph>=0.9.0",
+        "bioinformatics": [
+            "biopython>=1.79",
+            "bioservices>=1.8.0",
         ],
         "visualization": [
             "plotly>=5.0.0",
             "bokeh>=2.3.0",
+            "networkx>=2.6.0",
         ],
         "stats": [
             "pingouin>=0.4.0",
             "lifelines>=0.26.0",
+            "adjustText>=0.7.0",
+        ],
+        "advanced": [
+            "umap-learn>=0.5.0",
+            "hdbscan>=0.8.0",
         ],
     },
     entry_points={
         "console_scripts": [
-            "transcriptomics-demo=demo:main",
+            "proteomics-demo=demo:main",
         ],
     },
-    keywords="transcriptomics rna-seq bioinformatics genomics data-science education",
+    keywords="proteomics mass-spectrometry bioinformatics data-science education ipop",
     project_urls={
         "Documentation": "https://github.com/stanford-dataocean/data-science-precision-medicine",
         "Source": "https://github.com/stanford-dataocean/data-science-precision-medicine",
